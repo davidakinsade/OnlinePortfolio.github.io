@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Portfolio - David Akinsade</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="js/script.js">
+<style>
+
+.mySlides {display: none;}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  scroll-behavior: smooth;
+
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/bgimage3.png");
+  animation-iteration-count: unset;
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+#section2 {
+  height: 260px;
+  /* background-color: yellow; */
+}
+</style>
+</head>
+
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-animate-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">PORTFOLIO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#section2" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav> -->
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min w3-animate-top" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Aspiring Software Engineer</span><br>
+    <span class="w3-large">David Akinsade - Online Portfolio</span>
+    <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p> -->
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<!-- <div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Personal Profile</h3>
+      <p>Currently a student at Technological University of The Shannon: Midlands, Midwest studying for a BSc (Hons) in Software Design (Cloud Computing). Seeking to work in a role associated with software engineering to gain more of an understanding of what the occupation entails.
+        <br>My skills consist of teamwork and communiction. I work well by interacting with fellow colleagues and it is something that I enjoy doing. I acknowledge that communication skills are vital in teams also. I believe mine have improved as I have worked with numerous employees during my time at my internship
+        <br>In addition to my skills, my qualities would also act as a beneficial input. I have the drive to give good impressions. Whatever task is given to me, it will be done to the best of my ability. I am also passionate about any task I am required to do and am always motivated to put a lot of effort into my work.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-right" style="margin-right: 60px;" src="images/profile.jpeg" alt="profile" width="380" >
+    </div>
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-container w3-black w3-padding-64" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Additional Information</h3>
+  <!-- <p class="w3-center w3-large">The ones who runs this company</p> -->
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-hover-shadow">
+        <img src="images/sidero1.png" alt="Sidero" style="width:100%">
+        <div class="w3-container">
+          <h3>Past Experience In Software</h3>
+          <p class="w3-opacity">Sidero Ltd.</p>
+          <p> 2022</p>
+          <a class="w3-button w3-light-grey w3-block" href="sidero.html">Overview</a> 
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-hover-shadow">
+        <img src="images/microsoft.png" alt="Microsoft" style="width:100%">
+        <div class="w3-container">
+          <h3>Honours</h3>
+          <p class="w3-opacity">Microsoft Computer Applications</p>
+          <p>2017</p>
+          <a class="w3-button w3-light-grey w3-block" href="microsoft.html">Overview</a> 
+          <!-- <p><button class="w3-button w3-light-grey w3-block" ><i class="fa fa-envelope"></i> Overview</button></p> -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-hover-shadow">
+        <img src="images/projects.JPG" alt="Projects" style="width:100%">
+        <div class="w3-container">
+          <h3>Projects</h3>
+          <p class="w3-opacity">Past University Projects </p>
+          <p>2019-2023</p>
+          <a class="w3-button w3-light-grey w3-block" href="project.html">Overview</a> 
+          <!-- <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Overview</button></p> -->
+        </div>
+      </div>
+    </div>
+
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-white w3-padding-64">
+  <h3 class="w3-center">Areas Of Expertise</h3>
+  
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Software Design</span>
+    
+  </div>
+  
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Java</span>
+    
+  </div>
+  
+  <div class="w3-quarter">
+    <span class="w3-xlarge">C#</span>
+   
+  </div>
+  
+  <div class="w3-quarter">
+    <span class="w3-xlarge">HTML</span>
+  
+  </div>
+
+  <div class="w3-quarter">
+    <span class="w3-xlarge">HTML</span>
+  
+  </div>
+
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Cascading Style Sheets</span>
+  
+  </div>
+
+  <div class="w3-quarter">
+    <span class="w3-xlarge">JavaScript</span>
+  
+  </div>
+
+  <div class="w3-quarter">
+    <span class="w3-xlarge">MySQL</span>
+  
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer id="section2">
+
+  <address>
+    <p>Contact details:</p>
+      Student e-mail address: <a href="mailto:a00270351@student.ait.ie">A00270351@student.ait.ie</a>.<br> 
+    
+      </address>
+
+  <!-- <p>Author: Hege Refsnes<br> -->
+  <p><a href="https://www.linkedin.com/in/davidakinsade/">
+  <img src="images/linkediniconwhite.png" alt="linkedin" width="30" height="30">
+  </a>
+  </p>
+
+
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
+//slides
+// var slideIndex = 1;
+// showDivs(slideIndex);
+
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length} ;
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   x[slideIndex-1].style.display = "block";
+//}    
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
